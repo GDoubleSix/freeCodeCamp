@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>freeCodeCamp Form</title>
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name<input id="name" type="text" required placeholder="Enter Your Name" /></label>
+            <label id="email-label">Email<input id="email" type="email" required
+                    placeholder="Enter Your email" /></label>
+            <label id="number-label">age<input id="number" type="number" required min="13" max="120"
+                    placeholder="age" /></label>
+
+            <!--Select form-->
+            <select id="dropdown" name="dropdown">
+                <option value="">Select Current Role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Leaner</option>
+                <option value="4">Prefer Not To Say</option>
+                <option value="5">Other</option>
+            </select>
+        </fieldset>
+
+        <!--input radio-->
+        <fieldset>
+            <p class="pRadio">Would you recommend freeCodeCamp to a friend?</p>
+            <label>
+                <input type="radio" name="group1" value="1" class="inline" /> Definitely
+            </label>
+            <label>
+                <input type="radio" name="group1" value="2" class="inline" /> Maybe
+            </label>
+            <label>
+                <input type="radio" name="group1" value="3" class="inline" /> Not Sure
+        </fieldset>
+
+        <!--checkbox-->
+        <fieldset>
+            <p class="pRadio">What would you like to see improved? (Check all that apply)</p>
+            <label for="front-end">
+                <input class="inline" id="front-end" type="checkbox" required value="chacked1" />Front-End Development
+            </label>
+            <label for="back-end">
+                <input class="inline" id="back-end" type="checkbox" required value="chacked2" />Back-End Development
+            </label>
+        </fieldset>
+        <fieldset>
+            <textarea id="comment" placeholder="Enter Your Comment Here"></textarea></fieldset>
+        <input id="submit" type="submit"></submit>
+    </form>
+</body>
+
+</html>
